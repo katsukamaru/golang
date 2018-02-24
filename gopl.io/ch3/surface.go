@@ -16,5 +16,9 @@ const (
 
 func main() {
 	fmt.Printf("<svg xmlns='http://www.w3.org/2000/svg' style='stroke: gray; fill:white; stroke-width: 0.7' width='%d'>", width, height)
+}
 
+func someFunc(input string) (string, error) {
+	_, err := fmt.Println(input)
+	return "", err
 }
